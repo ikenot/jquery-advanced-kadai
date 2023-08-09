@@ -61,6 +61,9 @@ $(function () {
   $('#message').blur(function () {
     inputCheck();
   });
+  $('prefecture').blur(function () {
+    inputCheck();
+  });
   $('#agree').blur(function () {
     inputCheck();
   });
@@ -97,7 +100,7 @@ $(function () {
     }
 
     if($('#prefecture').val() == '') {
-      $('#prefecture').css('backgroud-color', '#f79999');
+      $('#prefecture').css('background-color', '#f79999');
       error = true;
       message += '都道府県を選択してください。\n';
     } else {
